@@ -16,6 +16,10 @@ Hibernate es un framework de mapeo objeto-relacional (ORM) para Java que facilit
   
 - **Transacciones y manejo de sesiones:** Hibernate maneja transacciones de forma transparente y proporciona soporte para manejar sesiones de forma eficiente.
 
+## Integración con JPA
+
+Hibernate implementa la especificación de Java Persistence API (JPA), que es una API estándar para la gestión de la persistencia de datos en Java. JPA define un conjunto de interfaces y anotaciones que Hibernate implementa, lo que significa que puedes utilizar Hibernate como la implementación de JPA en tu aplicación.
+
 ## Uso
 
 - **Configuración:** Hibernate ofrece opciones tanto de configuración basada en anotaciones como en archivos XML.
