@@ -16,7 +16,7 @@ public class Cliente {
     @Column(name="forma_pago")
     private String tipoPago;
 
-    // Constructor por defecto Obligado por defecto por que HIbernate insatancia y  si no lo tiene lanza Error
+    // Constructor por defecto Obligado por defecto por que Hibernate instancia y  si no lo tiene lanza Error
 
     public Cliente() {
     }
