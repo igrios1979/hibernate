@@ -1,4 +1,4 @@
-package org.example.util;
+package org.igrios.hibernate.appp.utility;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;

@@ -2,6 +2,7 @@ package org.igrios.hibernate.appp;
 
 import jakarta.persistence.EntityManager;
 import org.igrios.hibernate.appp.entity.Cliente;
+import org.igrios.hibernate.appp.utility.JpaUtil;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -12,7 +13,7 @@ public class HibernateListarPantalla {
 
     public static void main(String[] args) {
 
-        EntityManager em = org.example.util.JpaUtil.getEntityManager();
+        EntityManager em = JpaUtil.getEntityManager();
 
         List<Cliente> clientes = em.createQuery("select c from Cliente  c").getResultList();
 
