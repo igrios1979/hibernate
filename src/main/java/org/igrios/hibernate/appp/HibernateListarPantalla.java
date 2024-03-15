@@ -8,9 +8,12 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.List;
+import java.util.Scanner;
 
 public class HibernateListarPantalla {
 
+    boolean salir = false;
+    Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
         EntityManager em = JpaUtil.getEntityManager();
