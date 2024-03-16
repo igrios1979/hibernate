@@ -34,10 +34,32 @@ public class HibernateCrudService {
         service.guardar(cl);
         System.out.println("insert ok .............");
         service.listar().forEach(System.out::println);
+
+
+        System.out.println("==========|editar|==============");
+
+        Long id = cl.getId();
+        optcl = service.porId(id);
+        optcl.ifPresent(c-> {
+            c.setTipoPago("mercado pago");
+            service.guardar(c);
+            System.out.println(" Editado OK ......" );
+       });
+        service.listar().forEach(System.out::println);
+
+        System.out.println("==========|eliminar|==============");
+
+        for (int i = 21; i < 30; i++) {
+            long s = (long) i; // Convertir int a long
+            service.eliminar(s);
+            System.out.println("Eliminando id " + s);
+        }
+
+        service.listar().forEach(System.out::println);
+
+
+
         em.close();
-
-
-
     }
 
 

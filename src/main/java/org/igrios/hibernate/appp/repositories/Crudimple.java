@@ -29,7 +29,7 @@ public class Crudimple implements CrudRepository<Cliente>{
             em.merge(cliente); /* Es un update   */
 
         }else{
-            em.persist(cliente); /*insert*/
+            em.persist(cliente);
         }
 
     }
