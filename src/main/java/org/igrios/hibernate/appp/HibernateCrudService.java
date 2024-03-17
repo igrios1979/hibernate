@@ -49,7 +49,7 @@ public class HibernateCrudService {
 
         System.out.println("==========|eliminar|==============");
 
-        for (int i = 21; i < 30; i++) {
+        for (int i = 2; i < 19; i++) {
             long s = (long) i; // Convertir int a long
             service.eliminar(s);
             System.out.println("Eliminando id " + s);
