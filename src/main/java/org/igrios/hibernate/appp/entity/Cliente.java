@@ -21,6 +21,11 @@ public class Cliente {
     public Cliente() {
     }
 
+    public Cliente(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
     // Constructor con parámetros
     public Cliente(String nombre, String apellido, String tipoPago) {
         this.nombre = nombre;
